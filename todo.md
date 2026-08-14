@@ -10,4 +10,6 @@
 - [ ] Verify the provided GitHub remote and authentication.
 - [ ] Push the prepared portfolio source to the provided repository.
 - [ ] Confirm the remote branch and report GitHub Pages follow-up steps.
+- [ ] Verify the provided GitHub remote and authentication — repository remains empty after retry.
+- [ ] Prepare a downloadable project archive for local Windows storage.
 - [x] Check whether the GitHub Actions deployment workflow completed successfully — rechecked; no run exists because the repository remains empty.
