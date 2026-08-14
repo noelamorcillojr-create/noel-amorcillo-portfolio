@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 // Strips the trailing slash so wouter matches both "/base/" and "/base"
 const ROUTER_BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-function Router() {
+function AppRouter() {
   return (
     <Router base={ROUTER_BASE}>
       <Switch>
@@ -27,7 +27,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <AppRouter />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
