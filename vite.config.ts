@@ -79,7 +79,7 @@ function vitePluginManusDebugCollector(): Plugin {
     name: "manus-debug-collector",
 
     transformIndexHtml(html) {
-      if (process.env.NODE_ENV === "production") {
+      if (process.env.NODE_ENV === "production" || process.env.GITHUB_PAGES === "true") {
         return html;
       }
       return {
@@ -205,7 +205,10 @@ function vitePluginStorageProxy(): Plugin {
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
+const isGitHubPagesBuild = process.env.GITHUB_PAGES === "true";
+
 export default defineConfig({
+  base: isGitHubPagesBuild ? "/noel-amorcillo-portfolio/" : "/",
   plugins,
   resolve: {
     alias: {
