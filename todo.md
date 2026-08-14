@@ -7,3 +7,7 @@
 - [x] Add the GitHub Actions Pages deployment workflow.
 - [x] Remove or replace Manus-only static hosting references.
 - [x] Verify the GitHub Pages build and save a new checkpoint.
+- [ ] Verify the provided GitHub remote and authentication.
+- [ ] Push the prepared portfolio source to the provided repository.
+- [ ] Confirm the remote branch and report GitHub Pages follow-up steps.
+- [x] Check whether the GitHub Actions deployment workflow completed successfully — rechecked; no run exists because the repository remains empty.
